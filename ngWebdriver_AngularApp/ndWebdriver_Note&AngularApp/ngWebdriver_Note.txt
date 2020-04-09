@@ -1,0 +1,67 @@
+For Angular based application we have to used protractor. But for protractor we have to use javascript. Can we use selenium webdriver with java ? can we use selenium - java
+for Angular based applications ?  --->  Answer is YES, we can do that.
+
+There is third party API/ Liabrary we have to use  --> That is called ngWebdriver
+
+
+
+Problems and limitations (Automationd angular applications using selenium webdriver-java):
+We can automate the angular application usig Selenium webdriver using the custome Xpath eg. //input[@ng-model='first'] with proper custome wait mechanism(implict, explicit or fluent wait)
+but sometimes your all above waits not working properly, and synchronization not happening properly. And we will start getting failure cases (today it is working but not working tommorow) like a typical java-webdriver.
+In this situatiuon normal webdriver java synchronization won't work sometimes.
+1)we may face the synchronization issue with Angular  application, if we are using webdriver java
+2)we hava a different HTML/Tags and locators in Angular and we dont have any support for this in webdriver-java.
+
+
+
+Why Angular based applications are different from other typical applications ?
+
+* Angular Js based application used for single page application where data is very dynamic. Where the HTML content is dynamic and it is used with Angular framework.
+Angular is javascript framework. 
+* While trying to automate any angular application using selenium most of us face issues like synchronization and absence of angular specific locator 
+like ngbinding, ngmodel, ngrepater, etc.
+* In angular applications, we have different kind of content in DOM, ex. ng-bind, ng-reapeter, ng-model, ng-options. These are the different HTML tags are avilable there.  
+
+
+* We are using ngWebDriver along with selenium java-webdriver.
+
+References to Deep learn the ngWebdriver :
+https://github.com/paul-hammant/ngWebDriver
+https://www.qaautomation.co.in/2019/09/ngwebdriver-automating-angularjs-using-selenium.html
+
+
+ngWebDriver dependency :
+		<dependency>
+			  <groupId>com.paulhammant</groupId>
+			  <artifactId>ngwebdriver</artifactId>
+			  <version>1.1.3</version>
+		</dependency>
+
+
+
+Webdriver Manager dependency :
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
+
+https://dzone.com/articles/webdriver-manager-hassle-free-browser-binary-manag
+
+
+
+
+How to launch the Angular application on a local sysyem:
+https://github.com/juliemr/protractor-demo
+
+Or else you can use below url:
+
+http://juliemr.github.io/protractor-demo/
+
+
+ 
+
+
+
+

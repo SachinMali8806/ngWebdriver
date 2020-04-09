@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13651" started-at="2020-04-09T16:13:38 IST" finished-at="2020-04-09T16:13:52 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13651" started-at="2020-04-09T16:13:38 IST" finished-at="2020-04-09T16:13:52 IST">
+      <class name="Tests.CalculatorPageTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Tests.CalculatorPageTest@43814d18]" name="Setup" is-config="true" duration-ms="8342" started-at="2020-04-09T16:13:38 IST" finished-at="2020-04-09T16:13:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="sumTest()[pri:1, instance:Tests.CalculatorPageTest@43814d18]" name="sumTest" duration-ms="2896" started-at="2020-04-09T16:13:46 IST" finished-at="2020-04-09T16:13:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumTest -->
+        <test-method status="PASS" signature="subTest()[pri:2, instance:Tests.CalculatorPageTest@43814d18]" name="subTest" duration-ms="2332" started-at="2020-04-09T16:13:49 IST" finished-at="2020-04-09T16:13:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subTest -->
+      </class> <!-- Tests.CalculatorPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
